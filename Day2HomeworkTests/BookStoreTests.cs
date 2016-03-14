@@ -58,7 +58,7 @@ namespace Day2Homework.Tests
         }
 
         [TestMethod()]
-        public void CountSumSellPrice_buy_no1_1_no2_1_no3_1__no4_1_shoudl_price_270()
+        public void CountSumSellPrice_buy_no1_1_no2_1_no3_1__no4_1_shoudl_price_320()
         {
             var buyList = new List<Book>
             {
@@ -78,7 +78,7 @@ namespace Day2Homework.Tests
         }
 
         [TestMethod()]
-        public void CountSumSellPrice_buy_no1_1_no2_1_no3_1__no4_1_no5_1_shoudl_price_270()
+        public void CountSumSellPrice_buy_no1_1_no2_1_no3_1__no4_1_no5_1_shoudl_price_375()
         {
             var buyList = new List<Book>
             {
