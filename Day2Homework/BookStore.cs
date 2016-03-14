@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Day2Homework
 {
@@ -10,7 +11,7 @@ namespace Day2Homework
 
         public int CountSum(List<Book> buyList)
         {
-            throw new System.NotImplementedException();
+            return buyList.Sum(x => x.Price);
         }
     }
 }
