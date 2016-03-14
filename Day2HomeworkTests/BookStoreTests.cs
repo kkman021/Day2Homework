@@ -56,5 +56,25 @@ namespace Day2Homework.Tests
 
             Assert.AreEqual(expectPrice, actual);
         }
+
+        [TestMethod()]
+        public void CountSumSellPrice_buy_no1_1_no2_1_no3_1__no4_1_shoudl_price_270()
+        {
+            var buyList = new List<Book>
+            {
+                new Book() { BookId = 1, BookName = "哈利波特第一集", Price = 100 },
+                new Book() { BookId = 2, BookName = "哈利波特第二集", Price = 100 },
+                new Book() { BookId = 3, BookName = "哈利波特第三集", Price = 100 },
+                new Book() { BookId = 4, BookName = "哈利波特第四集", Price = 100 }
+
+            };
+
+            var expectPrice = 320;
+            var target = new BookStore();
+
+            var actual = target.CountSum(buyList);
+
+            Assert.AreEqual(expectPrice, actual);
+        }
     }
 }
