@@ -13,7 +13,8 @@ namespace Day2Homework
         {
             buyList = buyList.OrderBy(x => x.BookId).ToList();
             var differentBookCount = 0;
-            double totalPrice = buyList.Sum(x => x.Price);
+            double discount = 1;
+            double totalPrice = 0;
             int? tempId = null;
 
             foreach (var book in buyList)
@@ -31,13 +32,23 @@ namespace Day2Homework
             }
 
             if (differentBookCount == 2)
-                totalPrice = totalPrice * 0.95;
+                discount = 0.95;
             else if (differentBookCount == 3)
-                totalPrice = totalPrice * 0.9;
+                discount = 0.9;
             else if (differentBookCount == 4)
-                totalPrice = totalPrice * 0.8;
+                discount = 0.8;
             else if (differentBookCount == 5)
-                totalPrice = totalPrice * 0.75;
+                discount = 0.75;
+
+            for (int i = 0; i < buyList.Count; i++)
+            {
+                if (i <= differentBookCount - 1)
+                {
+                    totalPrice = totalPrice + buyList[i].Price * discount;
+                }
+                else
+                    totalPrice = totalPrice + buyList[i].Price;
+            }
 
             return totalPrice;
         }
