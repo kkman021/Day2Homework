@@ -9,9 +9,31 @@ namespace Day2Homework
         {
         }
 
-        public int CountSum(List<Book> buyList)
+        public double CountSum(List<Book> buyList)
         {
-            return buyList.Sum(x => x.Price);
+            buyList = buyList.OrderBy(x => x.BookId).ToList();
+            var differentBookCount = 0;
+            double totalPrice = buyList.Sum(x => x.Price);
+            int? tempId = null;
+
+            foreach (var book in buyList)
+            {
+                if (book.BookId != tempId)
+                {
+                    differentBookCount++;
+                }
+                else
+                {
+                    tempId = book.BookId;
+                }
+                tempId = book.BookId;
+
+            }
+
+            if (differentBookCount == 2)
+                totalPrice = totalPrice * 0.95;
+
+            return totalPrice;
         }
     }
 }
