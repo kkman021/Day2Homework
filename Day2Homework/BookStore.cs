@@ -36,7 +36,8 @@ namespace Day2Homework
                 totalPrice = totalPrice * 0.9;
             else if (differentBookCount == 4)
                 totalPrice = totalPrice * 0.8;
-
+            else if (differentBookCount == 5)
+                totalPrice = totalPrice * 0.75;
 
             return totalPrice;
         }
