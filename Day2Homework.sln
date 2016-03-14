@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2Homework", "Day2Homework\Day2Homework.csproj", "{F3A35712-460C-4F90-8A78-AF6589FE7567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2HomeworkTests", "Day2HomeworkTests\Day2HomeworkTests.csproj", "{95103BB1-5B8B-40B6-A97D-29781CB324A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3A35712-460C-4F90-8A78-AF6589FE7567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A35712-460C-4F90-8A78-AF6589FE7567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A35712-460C-4F90-8A78-AF6589FE7567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A35712-460C-4F90-8A78-AF6589FE7567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95103BB1-5B8B-40B6-A97D-29781CB324A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95103BB1-5B8B-40B6-A97D-29781CB324A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95103BB1-5B8B-40B6-A97D-29781CB324A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95103BB1-5B8B-40B6-A97D-29781CB324A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
